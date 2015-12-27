@@ -40,9 +40,10 @@ img {
 	max-width: 100%;
 }
 
-header ul, footer ul, nav ul { 
+ul, ol { 
 	list-style:none;
-	margin-left: -40px;
+	padding-left: 0;
+
  }
 /* ================================= 
   Base Layout Styles
@@ -172,8 +173,12 @@ header ul, footer ul, nav ul {
 	background-color: #fafafa;
 }
 .nav-bottom {
-display: none;
+	display: none;
 }
+li.selected {
+	background-color: #fafafa;
+}
+
 /* ---- Layout Containers ---- */
 
     .clearfix::after {
@@ -201,7 +206,8 @@ display: none;
 	.main-nav li {
 		float: left;
 		margin-top: -5px;
-		padding-right: 1.5em;
+		margin-right: 1.5em;
+		text-align: center;
 	}
 	
 	.banner {
@@ -286,6 +292,10 @@ display: none;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	
+	li.selected {
+	background-color: #fafafa;
+}
 }	
 
 @media screen and (min-width: 960px) {
@@ -398,5 +408,7 @@ display: none;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	
+	li.selected {
+	background-color: #fff;
+}
 }
