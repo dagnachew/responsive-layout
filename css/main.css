@@ -1,0 +1,402 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #4a4a4a;
+	font-weight: 900;
+}
+
+h2,
+h3 {
+	margin-top: 1em;
+	margin-bottom: .1em;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+header ul, footer ul, nav ul { 
+	list-style:none;
+	margin-left: -40px;
+ }
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Header ---- */
+
+.wrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-nav li {
+	text-transform: uppercase;
+	background-color: #fff;
+	padding: .4em;
+	margin: .3em;
+}
+
+.main-header h1 {
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+.header {
+	background-color: #fafafa;
+	padding-top: .5em;
+	padding-bottom: 0em;
+	margin-top: 0px;
+}
+	
+.banner p {
+	font-size: .95em;
+}
+.banner {
+	margin: 2.5em 1em 0em; 
+}
+	
+.banner-pic {
+	width: 75%;
+}
+    
+.main-header h2, a {
+	font-size: 1em;
+	padding-top: 15px;
+	text-align: center;
+	letter-spacing: .05em;
+}
+	
+.main-nav a {
+	font-size: .8em;
+}
+	
+.solo {
+	clear: both;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: .9em;
+	letter-spacing: .1em;
+}
+
+/* ---- Main Content ---- */	
+.page {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.page h2 {
+	font-size: 1em;
+	margin-top: 2em;
+	margin-bottom: .5em;
+	text-transform: none;
+	letter-spacing: .05em;
+}
+.page p {
+	font-size: .95em;
+	margin-top: 0em;
+	margin-bottom: 3em;
+}
+		
+.portfolio-image1 {
+		margin-top: 1em;
+}
+
+/* ---- Contact ---- */	
+
+.contact {
+	background-color: #fafafa;
+	padding-top: .2em;
+	padding-bottom: 2em;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+.contact p {
+	font-size: .95em;
+	margin-bottom: .2em;
+}
+	
+/* ---- Footer ---- */	
+	
+.main-footer {
+	background-color: #fafafa;
+	border-top: 1px solid lightgray;
+	margin: 0em .5em 1em;
+	height: 4em;
+}
+.left,
+.right {
+	font-size: .6em;
+	padding-left: .3em;
+	padding-right: .3em;
+	padding-top: 0em;
+}
+.left {
+	display: inline-block;
+	float: left;
+	font-size: .8em;
+	font-weight: 900;
+}
+.right {
+	display: inline-block;
+	float: right;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+.bottom {
+	background-color: #fafafa;
+}
+.nav-bottom {
+display: none;
+}
+/* ---- Layout Containers ---- */
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+	}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+
+/* ---- Header ---- */	
+
+	.header {
+			background-color: #fff;
+	}
+	.main-header {
+		display: inline-block;
+		vertical-align: center;
+	} 
+
+	.main-nav li {
+		float: left;
+		margin-top: -5px;
+		padding-right: 1.5em;
+	}
+	
+	.banner {
+		clear: both;
+		padding: 20px;
+		font-size: 1.2em;
+		padding-top: 0px;
+	}
+	
+	.banner p {
+		font-size: .8em;
+		text-align: left;
+		vertical-align: top;
+
+	}
+	.banner-pic {
+		width: 40%;
+		float: right;
+		padding-left: 10px;
+	}
+	
+	.portfolio-image1, .portfolio-image {
+		margin-top: 0px;
+	}
+	.page {
+		display: inline-block;
+		width: 45%;
+		padding: 5px;
+		margin: 0 auto;
+	}
+	.contact {
+		clear: both;
+	}
+	
+	.page h2 {
+		margin-top: 10px;
+	}
+	
+	.page p {
+		font-size: .8em;
+	}
+	
+
+	
+/* ---- Contact ---- */	
+
+	.contact {
+		clear: both;
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		margin: 0 auto;
+		padding-right: 50px;
+		padding-left: 50px;
+
+	}
+	.contact p {
+		font-size: .8em;
+	}
+
+/* ---- Footer ---- */	
+
+	.nav-bottom {
+		display: inline-block;
+		float: right;
+		text-transform: uppercase;
+		font-size: .6em;
+		padding-right: 10px;
+	}
+	.nav-bottom li {
+		font-size: 1.1em;
+		float: right;
+		padding-left: 20px;
+	}
+	
+	.right {
+	display: none;
+	}
+	
+	.main-footer {
+		padding-top: 5px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}	
+
+@media screen and (min-width: 960px) {
+
+/* ---- Header ---- */
+
+	.wrapper {
+		max-width: 960px;
+	}
+	.main-nav li {
+		display: inline-block;
+		float: right;
+		font-size: 1em;
+		background-color: #fafafa;
+	}
+	.name {
+		display: inline-block;
+		float: left;
+		padding-left: 1.2em;
+	}
+	.main-nav {
+		padding-left: 0em;	
+		padding-right: 20px;		
+	}
+	.header {
+		background-color: #fafafa;
+		margin-left: 5%;
+		margin-right: 5%;
+		
+	}
+	
+	.banner {
+		font-size: 1.2em;
+		background-color: #fafafa;
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+	.banner p {
+		text-align: left;
+		vertical-align: top;
+		font-size: .85em;
+	}
+
+	.banner-pic {
+		width: 35%;
+		float: right;
+		padding-right: 20px;
+	}
+	
+	.solo {
+		font-size: 1em;
+	}
+	
+/* ---- main ---- */		
+	
+	.portfolio-image1, .portfolio-image {
+		margin-top: 0px;
+	}
+	.page {
+		display: inline-block;
+		width: 30%;
+		padding: 5px;
+		margin: auto;
+	}
+	.contact {
+		clear: both;
+	}
+	
+	.page h2 {
+		margin-top: 10px;
+	}
+	
+	.page p {
+		font-size: .8em;
+	}
+
+/* ---- Contact ---- */		
+
+	.contact {
+		padding: 10px 200px 50px;
+		background-color: #fafafa;
+	}
+	.contact p {
+		font-size: .9em;
+		margin-bottom: 10px;
+	}
+
+/* ---- Footer ---- */		
+	.nav-bottom {
+		display: inline-block;
+		float: right;
+		text-transform: uppercase;
+		font-size: .8em;
+	}
+	.nav-bottom li {
+		float: left;
+		padding-left: 30px;
+	}
+	
+	.right {
+		display: none;
+	}
+	.left {
+		font-size: .9em;
+		float: left;
+	}
+	
+	.main-footer {
+		padding-top: 5px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+}
