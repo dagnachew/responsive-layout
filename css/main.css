@@ -195,16 +195,17 @@ li.selected {
 		background-color: #fff;
 	}
 	.main-header {
-		display: inline-block;
 		vertical-align: center;
 		width: 100%;
 	} 
-
+	.main-nav {
+		margin-top: -10px;
+	}
 	.main-nav li {
+		font-size: 1.2em;
 		display: inline-block;
-		margin-top: -5px;
-		margin-right: 1.5em;
 		text-align: center;
+		padding-left: 20px;
 	}
 	
 	.banner {
@@ -301,15 +302,13 @@ li.selected {
 	.main-header {
 		width: 100%;
 	}
-
 	.main-nav li {
 		float: left;
-		font-size: 1.2em;
 		background-color: #fafafa;
 	}
 	.main-nav {
 		float: right;
-		margin-top: 10px;
+		margin-top: 0px;
 	}
 	.name {
 		float: left;
