@@ -40,11 +40,7 @@ img {
 	max-width: 100%;
 }
 
-ul, ol { 
-	list-style:none;
-	padding-left: 0;
 
- }
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -147,7 +143,7 @@ ul, ol {
 .main-footer {
 	background-color: #fafafa;
 	border-top: 1px solid lightgray;
-	margin: 0em .5em 1em;
+	margin: 0em .5em 0em;
 	height: 4em;
 }
 .left,
@@ -179,7 +175,7 @@ li.selected {
 	background-color: #fafafa;
 }
 
-/* ---- Layout Containers ---- */
+/* ---- clearfix ---- */
 
     .clearfix::after {
       content: "";
@@ -278,19 +274,27 @@ li.selected {
 		padding-right: 10px;
 	}
 	.nav-bottom li {
-		font-size: 1.1em;
+		font-size: 1.2em;
 		float: right;
 		padding-left: 20px;
+		margin-top: 10px;
 	}
 	
 	.right {
-	display: none;
+		display: none;
+		padding: 0px;
 	}
 	
+	.left {
+		font-size: .9em;
+		float: left;
+		padding: 0px;
+		margin-top: 10px;
+
+	}
 	.main-footer {
-		padding-top: 5px;
 		margin-left: 5%;
-		margin-right: 5%;
+		margin-right: 5%;		
 	}
 	
 	li.selected {
@@ -389,6 +393,7 @@ li.selected {
 		float: right;
 		text-transform: uppercase;
 		font-size: .8em;
+		margin-top: 10px;
 	}
 	.nav-bottom li {
 		float: left;
@@ -397,16 +402,17 @@ li.selected {
 	
 	.right {
 		display: none;
+		padding-top: 5px;
 	}
 	.left {
 		font-size: .9em;
 		float: left;
+
 	}
 	
 	.main-footer {
-		padding-top: 5px;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 0 5%;
+		padding: 0px;
 	}
 	li.selected {
 	background-color: #fff;
