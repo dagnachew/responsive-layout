@@ -307,7 +307,7 @@ li.selected {
 /* ---- Header ---- */
 
 	.wrapper {
-		max-width: 960px;
+		max-width: 1000px;
 	}
 	.main-nav li {
 		display: inline-block;
