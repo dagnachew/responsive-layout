@@ -198,10 +198,11 @@ li.selected {
 	.main-header {
 		display: inline-block;
 		vertical-align: center;
+		width: 100%;
 	} 
 
 	.main-nav li {
-		float: left;
+		display: inline-block;
 		margin-top: -5px;
 		margin-right: 1.5em;
 		text-align: center;
@@ -210,15 +211,11 @@ li.selected {
 	.banner {
 		clear: both;
 		padding: 20px;
-		font-size: 1.2em;
+		padding-bottom: 0px;
 		padding-top: 0px;
-	}
-	
-	.banner p {
-		font-size: .8em;
+		margin-bottom: 0px;
+		font-size: 1.2em;
 		text-align: left;
-		vertical-align: top;
-
 	}
 	.banner-pic {
 		width: 40%;
@@ -234,6 +231,7 @@ li.selected {
 		width: 45%;
 		padding: 5px;
 		margin: 0 auto;
+		font-size: 1.2em;
 	}
 	.contact {
 		clear: both;
@@ -262,7 +260,7 @@ li.selected {
 
 	}
 	.contact p {
-		font-size: .8em;
+		font-size: 1em;
 	}
 
 /* ---- Footer ---- */	
@@ -310,24 +308,21 @@ li.selected {
 	}
 
 	.main-nav li {
-		float: right;
+		float: left;
 		font-size: 1.2em;
 		background-color: #fafafa;
 	}
-	.name {
-		display: inline-block;
-		float: left;
-		padding-left: 1.2em;
-	}
 	.main-nav {
+		float: right;
 		margin-top: 10px;
-		padding-left: 0em;	
-		padding-right: 20px;
 	}
+	.name {
+		float: left;
+		padding-left: 1.5em;
+	}
+
 	.header {
 		background-color: #fafafa;
-		margin-left: 5%;
-		margin-right: 5%;	
 	}
 	.header, .main-footer, .portfolio {
 		max-width: 1000px;
@@ -336,20 +331,14 @@ li.selected {
 	}
 	.banner {
 		font-size: 1.2em;
-		background-color: #fafafa;
 		padding-right: 0px;
-		margin-right: 0px;
-	}
-	.banner p {
+		padding-left: 0px;
 		text-align: left;
-		vertical-align: top;
-		font-size: .85em;
 	}
-
 	.banner-pic {
-		width: 35%;
+		width: 40%;
 		float: right;
-		padding-right: 20px;
+		padding-left: 20px;
 	}
 	
 	.solo {
@@ -362,10 +351,10 @@ li.selected {
 		margin-top: 0px;
 	}
 	.page {
-		display: inline-block;
-		width: 30%;
+		width: 33%;
 		padding: 5px;
-		margin: auto;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 	.contact {
 		clear: both;
@@ -382,11 +371,11 @@ li.selected {
 /* ---- Contact ---- */		
 
 	.contact {
-		padding: 10px 200px 50px;
+		padding: 10px 20% 50px;
 		background-color: #fafafa;
 	}
 	.contact p {
-		font-size: .9em;
+		font-size: 1.2em;
 		margin-bottom: 10px;
 	}
 
