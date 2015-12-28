@@ -145,14 +145,14 @@ img {
 .main-footer {
 	background-color: #fafafa;
 	border-top: 1px solid lightgray;
-	margin: 0em .5em 0em;
+	margin: 0em .5em;
 	height: 4em;
 }
 .left,
 .right {
-	font-size: .6em;
-	padding-left: .3em;
-	padding-right: .3em;
+	font-size: .8em;
+	padding-left: 0;
+	padding-right: .0;
 	padding-top: 0em;
 }
 .left {
@@ -165,9 +165,8 @@ img {
 	display: inline-block;
 	float: right;
 	text-transform: uppercase;
-	font-size: .8em;
 }
-.bottom {
+.container {
 	background-color: #fafafa;
 }
 .nav-bottom {
@@ -189,7 +188,7 @@ li.selected {
   Media Queries
 ==================================== */
 
-@media screen and (min-width: 480px) and (max-width: 960px) {
+@media screen and (min-width: 600px) and (max-width: 960px) {
 
 /* ---- Header ---- */	
 
@@ -273,7 +272,6 @@ li.selected {
 		float: right;
 		text-transform: uppercase;
 		font-size: .6em;
-		padding-right: 10px;
 	}
 	.nav-bottom li {
 		font-size: 1.2em;
@@ -308,9 +306,7 @@ li.selected {
 
 /* ---- Header ---- */
 
-	.wrapper {
-		max-width: 1000px;
-	}
+
 	.main-nav li {
 		display: inline-block;
 		float: right;
@@ -329,10 +325,13 @@ li.selected {
 	.header {
 		background-color: #fafafa;
 		margin-left: 5%;
-		margin-right: 5%;
-		
+		margin-right: 5%;	
 	}
-	
+	.header, .main-footer, .portfolio {
+		max-width: 1000px;
+		vertical-align: center;
+		margin: 0 auto;
+	}
 	.banner {
 		font-size: 1.2em;
 		background-color: #fafafa;
@@ -418,5 +417,11 @@ li.selected {
 	}
 	li.selected {
 	background-color: #fff;
-}
+	}
+	
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: center;
+	}
 }
