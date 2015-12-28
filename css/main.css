@@ -39,7 +39,9 @@ a {
 img {
 	max-width: 100%;
 }
-
+.main-nav {
+		padding-top: .5em;
+}
 
 /* ================================= 
   Base Layout Styles
