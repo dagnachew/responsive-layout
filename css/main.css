@@ -113,7 +113,6 @@ img {
 	font-size: 1em;
 	margin-top: 2em;
 	margin-bottom: .5em;
-	text-transform: none;
 	letter-spacing: .05em;
 }
 .page p {
@@ -294,10 +293,6 @@ li.selected {
 		margin-left: 5%;
 		margin-right: 5%;		
 	}
-	
-	li.selected {
-	background-color: #fafafa;
-}
 }	
 
 @media screen and (min-width: 1024px) {
@@ -399,17 +394,13 @@ li.selected {
 		font-size: 1em;
 		float: left;
 		letter-spacing: .1em;
-
 	}
 	
 	.main-footer {
 		margin-left: 0 5%;
 		padding: 0px;
 	}
-	li.selected {
-	background-color: #fff;
-	}
-	
+
 	.container {
 		width: 100%;
 		margin: 0 auto;
