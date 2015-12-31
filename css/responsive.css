@@ -1,0 +1,45 @@
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+.main-header, 
+.main-nav {
+	display:flex;
+	flex-direction: column;
+}
+
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px){
+  .main-header {
+    justify-content: flex-end;
+	padding-top: 20px;
+  }
+  
+  .main-nav {
+    flex-direction: row;
+    justify-content: center;
+	margin-top: -15px;
+   }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+  }
+  .name {
+	margin-right: 940px;
+  }
+  .main-nav {
+    margin-top: 0;
+    align-self: center;
+  }
+  .main-nav li {
+    margin-left: 1em;
+    margin-right: 1em;
+   }
+
+}

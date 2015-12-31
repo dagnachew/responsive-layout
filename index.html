@@ -6,77 +6,67 @@
 		<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
 	</head>
 	<body>
 	<div class="wrapper">
-		<div class="container">
-			<div class="header">
-			<header class="main-header clearfix" id="top">
+		<div class="header">
+			<header class="main-header" id="top">
 				<a href="#"><h1 class="name">Student Name</h1></a>
 				<ul class="main-nav">
-					<a href="#"><li>Home</li></a>
-					<a href="#"><li>Portfolio</li></a>
-					<a href="#"><li>Contact</li></a>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</header><!--/.main-header--> 
 
-
-			<div class="banner clearfix">
+		<div class="banner clearfix">
 				<img class="banner-pic" src="img/responsive-layout-profile.png" alt="responsive layout">
 				<p> Hi! I'm a front-end developer who loves responsive design and CSS. I recently finished learning front-end web development at Treehouse and am excited to put all my skill to use! </p>
 			</div><!--/.banner-->
 		</div><!--/.header-->
-	</div><!--/.container--> 
 	
-	<h2 class="solo">Portfolio</h2>
-	<div class="portfolio clearfix">
+	<ul class="portfolio clearfix">
+		<h2>Portfolio</h2>
+		<li class="page">
+			<a href="#"><img class="portfolio-image" src="img/portfolio-1.png" alt="Marketing"></a>
+			<h2>Marketing Page</h2>
+			<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+		</li><!--/.marketing-page-->
 	
-	<div class="marketing page">
-		
-		<a href="#"><img class="portfolio-image1" src="img/portfolio-1.png" alt="Marketing Page"></a>
-		<h2>Marketing Page</h2>
-		<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-		
-	</div><!--/.marketing-page-->
+		<li class="page">
+			<a href="#"><img class="portfolio-image" src="img/portfolio-2.png" alt="Search"></a>
+			<h2>Search Page</h2>
+			<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+		</li><!--/.search-page-->
 	
-	<div class="search page">
-		<a href="#"><img class="portfolio-image" src="img/portfolio-2.png" alt="Search Page"></a>
-		<h2>Search Page</h2>
-		<p>This project searches through a specific database to find information that the user is trying to look up.</p>
-		
-	</div><!--/.search-page-->
+		<li class="page">
+			<a href="#"><img class="portfolio-image" src="img/portfolio-3.png" alt="Travel"></a>
+			<h2>Travel App</h2>
+			<p>This project This project compares travel times based on different transportation methods and tells you the best one.</p>
+		</li><!--/.travel-app-->
 	
-	<div class="travel page">
-		<a href="#"><img class="portfolio-image" src="img/portfolio-3.png" alt="Travel Page"></a>
-		<h2>Travel App</h2>
-		<p>This project This project compares travel times based on different transportation methods and tells you the best one.</p>
-		
-	</div><!--/.travel-app-->
+		<li class="page">
+			<a href="#"><img class="portfolio-image" src="img/portfolio-6.png" alt="Favourite"></a>
+			<h2>Map of Favourite Spots</h2>
+			<p>This project uses mapping apps to plot points from my favourite spots in the city for a do it yourself walking tour.</p>
+		</li><!--/.maps-favourite-spots-->
 	
-	<div class="maps-favourite page">
-		<a href="#"><img class="portfolio-image" src="img/portfolio-6.png" alt="Favourite spots"></a>
-		<h2>Map of Favourite Spots</h2>
-		<p>This project uses mapping apps to plot points from my favourite spots in the city for a do it yourself walking tour.</p>
-		
-	</div><!--/.maps-favourite-spots-->
+		<li class="page">
+			<a href="#"><img class="portfolio-image" src="img/portfolio-5.png" alt="Photo-gallery"></a>
+			<h2>Photo Gallery</h2>
+			<p>This project shows pictures from a recent trip to the viewer and allows them easily navigate through photos.</p>
+		</li><!--/.photo-gallery-->
 	
-	<div class="photo-gallery page">
-		<a href="#"><img class="portfolio-image" src="img/portfolio-5.png" alt="Photo gallery"></a>
-		<h2>Photo Gallery</h2>
-		<p>This project shows pictures from a recent trip to the viewer and allows them easily navigate through photos.</p>
-		
-	</div><!--/.photo-gallery-->
+		<li class="page">
+			<a href="#"><img class="portfolio-image" src="img/portfolio-4.png" alt="Calculator"></a>
+			<h2>Calculator</h2>
+			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+		</li><!--/.calculator-->
+	</ul>
 	
-	<div class="calculator page">
-		<a href="#"><img class="portfolio-image" src="img/portfolio-4.png" alt="Calculator"></a>
-		<h2>Calculator</h2>
-		<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-		
-	</div><!--/.calculator-->
-	</div>
-	<div class="container">
 	<div class="contact clearfix">
-		<h2 class="solo">Contact</h2>
+		<h2>Contact</h2>
 		<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 		<p>Phone &nbsp;&nbsp;<strong>+1(111) 555-1234</strong></p>
 		<p>Email &nbsp;&nbsp;<strong>email@yoursite.com</strong></p>
@@ -92,7 +82,6 @@
 			</ul>
 			</a>
 		</footer>
-	</div>
 	</div>
 </body>
 </html>
