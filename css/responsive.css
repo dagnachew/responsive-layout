@@ -31,7 +31,8 @@
     flex-direction: row;
   }
   .name {
-	margin-right: 940px;
+	margin-right: auto;
+	padding-left: 1em;
   }
   .main-nav {
     margin-top: 0;
