@@ -93,6 +93,7 @@ img {
 	width: 75%;
 }
     
+.first-child,
 h2:first-child,
 h2:last-child{
 	font-size: 1.2em;
@@ -102,7 +103,10 @@ h2:last-child{
 	padding-top: 40px;
 	padding-bottom: 10px;
 }
-	
+
+.first-child{
+	margin-bottom: 0;
+}
 
 /* ---- Main Content ---- */	
 .page {
@@ -130,7 +134,7 @@ h2:last-child{
 /* ---- Contact ---- */	
 
 .contact {
-	padding: 2em 1.5em 2em;
+	padding: 0 1.5em 2em;
 }
 
 	
@@ -341,7 +345,7 @@ h2:last-child{
 	}
 	
 	.main-footer {
-		margin-left: 0 5%;
+		margin-left: 0;
 		padding: 0;
 	}
 
